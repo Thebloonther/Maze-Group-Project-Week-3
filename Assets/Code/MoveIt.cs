@@ -18,7 +18,7 @@ public class MoveIt : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float x = Input.GetAxis("Hsorizontal");
+        float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
         movement = new Vector3(x, 0f, z) * moveSpeed;
