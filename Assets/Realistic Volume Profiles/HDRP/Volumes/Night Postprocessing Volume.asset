@@ -24,7 +24,7 @@ MonoBehaviour:
     m_Value: 1
   fixedExposure:
     m_OverrideState: 1
-    m_Value: -0.40669873
+    m_Value: 0.6885245
   compensation:
     m_OverrideState: 1
     m_Value: 0
@@ -646,7 +646,7 @@ MonoBehaviour:
     m_Value: 0
   blueOutRedIn:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 200
   blueOutGreenIn:
     m_OverrideState: 1
     m_Value: 0
@@ -770,7 +770,7 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.173
+    m_Value: 0.29
   scatter:
     m_OverrideState: 1
     m_Value: 0.7
@@ -965,7 +965,7 @@ MonoBehaviour:
     m_Value: {r: 1, g: 1, b: 1, a: 1}
   hueShift:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: -76
   saturation:
     m_OverrideState: 1
     m_Value: 8
