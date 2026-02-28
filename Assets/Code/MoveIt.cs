@@ -9,6 +9,7 @@ public class MoveIt : MonoBehaviour
     Rigidbody rb;
     public float jumpCooldown = 1f;
     private float jumpTimer = 0f;
+    float dashForce = 15f;
 
 
     public Vector3 MoveVec { get; private set;}
@@ -30,12 +31,20 @@ public class MoveIt : MonoBehaviour
 
         rb.linearVelocity = new Vector3(movement.x, rb.linearVelocity.y, movement.z);
 
-        if (Input.GetKeyDown(KeyCode.Space) && jumpTimer <= 0f){
+        if (Input.GetKeyDown(KeyCode.Space) && jumpTimer <= 0f)
+        {
 
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, jump, rb.linearVelocity.z);
             jumpTimer = jumpCooldown;
-            
 
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            Vector3 dashDirection = movement.normalized;
+
+            rb.linearVelocity = new Vector3 (dashDirection.x * dashForce, rb.linearVelocity.y, dashDirection.z * dashForce);
         }
     }
 }
