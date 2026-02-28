@@ -5771,6 +5771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8924ee0599787d4ab09e99cfb6d984f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Camera_Follow
+  rotatedSpeed: 100
   player: {fileID: 533718994}
 --- !u!114 &330585549
 MonoBehaviour:
@@ -8934,7 +8935,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveIt
   moveSpeed: 5
-  jump: 10
+  jump: 5
+  jumpCooldown: 1
 --- !u!1001 &534944783
 PrefabInstance:
   m_ObjectHideFlags: 0

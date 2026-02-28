@@ -7,6 +7,9 @@ public class MoveIt : MonoBehaviour
     public float jump = 7f;
     Vector3 movement; 
     Rigidbody rb;
+    public float jumpCooldown = 1f;
+    private float jumpTimer = 0f;
+
 
     public Vector3 MoveVec { get; private set;}
 
@@ -18,6 +21,8 @@ public class MoveIt : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        jumpTimer -= Time.deltaTime;
+
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
@@ -25,9 +30,11 @@ public class MoveIt : MonoBehaviour
 
         rb.linearVelocity = new Vector3(movement.x, rb.linearVelocity.y, movement.z);
 
-        if (Input.GetKey(KeyCode.Space)){
+        if (Input.GetKeyDown(KeyCode.Space) && jumpTimer <= 0f){
 
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, jump, rb.linearVelocity.z);
+            jumpTimer = jumpCooldown;
+            
 
         }
     }
