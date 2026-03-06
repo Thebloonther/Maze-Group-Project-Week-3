@@ -3340,6 +3340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8924ee0599787d4ab09e99cfb6d984f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Camera_Follow
+  rotatedSpeed: 100
   player: {fileID: 533718994}
 --- !u!114 &330585549
 MonoBehaviour:
@@ -5671,7 +5672,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 45ebb42386745804d996b7be9545e29e, type: 2}
+  - {fileID: 2100000, guid: 609fa51267a4c8f4fa09f01a6778a86f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

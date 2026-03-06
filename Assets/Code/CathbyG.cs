@@ -29,6 +29,6 @@ public class CathbyG : MonoBehaviour
     }
     private void Tele4()
     {
-        SceneManager.LoadScene("EndScene");
+        SceneManager.LoadScene("DeathSceneLevel1");
     }
 }
